@@ -15,7 +15,7 @@
         <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
           <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
             <div class="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid">
-              <a class="font-medium text-blue-600 py-3 md:py-6" href="#" aria-current="page">Home</a>
+              <a class="font-medium text-curious-blue py-3 md:py-6" href="#" aria-current="page">Home</a>
   
               <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] py-3 md:py-6">
                 <button type="button" class="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium ">
@@ -121,19 +121,14 @@
                   </div>
                 </div>
               </div>
-  
+              
+              <a class="font-medium text-gray-500 hover:text-gray-400 py-3 md:py-6" href="#" aria-current="page">Certificazioni</a>
+
               <div class="pt-3 md:pt-0">
-                <a class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                <a class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-curious-blue text-white hover:bg-curious-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
                   Contattaci
                 </a>
               </div>
-  
-              {{-- <div class="pt-3 md:pt-0">
-                <a class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                  <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  Log in
-                </a>
-              </div> --}}
 
             </div>
           </div>
