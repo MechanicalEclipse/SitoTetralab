@@ -1,3 +1,4 @@
+{{-- Far si che la scritta si illumina invece che sottolinearsi su hover --}}
 <!-- Card Grid -->
 <div class="max-w-screen-2xl px-4 xl:px-0  lg:pt-20 lg:pb-20 mx-auto">
     <div class="pb-12 grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
