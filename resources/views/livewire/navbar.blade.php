@@ -1,3 +1,4 @@
+{{-- Mettere i link in stampatello --}}
 <!-- ========== HEADER ========== -->
 <header class="flex stickyphp artisan livewire:layout flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0">
     <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
@@ -36,7 +37,7 @@
   
                   <div class="my-2 border-t border-gray-100 dark:border-neutral-800"></div>
   
-                  <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-lg hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="#">
+                  <a class="inline-flex gap-x-5 w-full p-4 text-gray-600 rounded-lg hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 " href="{{route('team')}}">
                     <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="2" y1="12" y2="12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" x2="6.01" y1="16" y2="16"/><line x1="10" x2="10.01" y1="16" y2="16"/></svg>
                     <div class="grow">
                       <span class="block font-semibold mb-1 text-gray-800 ">Team</span>
@@ -67,7 +68,7 @@
                 <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full start-0 min-w-60 bg-white md:shadow-2xl rounded-lg py-2 md:p-4 before:absolute before:-top-5 before:start-0 before:w-full before:h-5">
                   <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="flex flex-col mx-1 md:mx-0">
-                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="#">
+                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="{{route("consulenza-ambientale")}}">
                         <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                         <div class="grow">
                           <p class="font-medium text-gray-800">Consulenza ambientale</p>
