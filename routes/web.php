@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\ServiceType;
 
 Route::get('/', function () {
     return view('home');
@@ -10,6 +11,8 @@ Route::get('team', function () {
     return view('team');
 })->name("team");
 
-Route::get('consulenza-ambientale', function () {
-    return view('consulenza-ambientale');
-})->name("consulenza-ambientale");
+// Route::get('consulenza-ambientale', function () {
+//     return view('consulenza-ambientale');
+// })->name("consulenza-ambientale");
+
+Route::get('/servizi/{slug}', ServiceType::class)->name("serviceroute");

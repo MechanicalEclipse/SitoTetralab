@@ -1,6 +1,6 @@
 {{-- Mettere i link in stampatello --}}
 <!-- ========== HEADER ========== -->
-<header class="flex stickyphp artisan livewire:layout flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0">
+<div class="flex stickyphp artisan livewire:layout flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white text-sm py-3 md:py-0">
     <nav class="max-w-[85rem] w-full mx-auto px-4 md:px-6 lg:px-8" aria-label="Global">
       <div class="relative md:flex md:items-center md:justify-between">
         <div class="flex items-center justify-between">
@@ -68,37 +68,17 @@
                 <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full start-0 min-w-60 bg-white md:shadow-2xl rounded-lg py-2 md:p-4 before:absolute before:-top-5 before:start-0 before:w-full before:h-5">
                   <div class="md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="flex flex-col mx-1 md:mx-0">
-                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="{{route("consulenza-ambientale")}}">
+                      @foreach ($type as $service)
+                      
+                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="{{route("serviceroute", $service->slug)}}" wire:key="{{$service->id}}">
                         <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                         <div class="grow">
-                          <p class="font-medium text-gray-800">Consulenza ambientale</p>
-                          <p class="text-sm text-gray-500 group-hover:text-gray-800">Explore advice and explanations for all of Preline's features.</p>
+                          <p class="font-medium text-gray-800">{{ $service->title }}</p>
+                          <p class="text-sm text-gray-500 group-hover:text-gray-800">{{ $service->description }}</p>
                         </div>
                       </a>
+                      @endforeach
   
-                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="#">
-                        <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></svg>
-                        <div class="grow">
-                          <p class="font-medium text-gray-800">Sicurezza sul lavoro</p>
-                          <p class="text-sm text-gray-500 group-hover:text-gray-800">Discover the huge range of tools that Preline integrates with.</p>
-                        </div>
-                      </a>
-  
-                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="#">
-                        <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
-                        <div class="grow">
-                          <p class="font-medium text-gray-800">Analisi ambientali</p>
-                          <p class="text-sm text-gray-500 group-hover:text-gray-800">Build custom integrations with our first-class API.</p>
-                        </div>
-                      </a>
-
-                      <a class="group flex gap-x-5 hover:bg-gray-100 rounded-lg p-4" href="#">
-                        <svg class="flex-shrink-0 size-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
-                        <div class="grow">
-                          <p class="font-medium text-gray-800">Rilievi e monitoraggi ambientali</p>
-                          <p class="text-sm text-gray-500 group-hover:text-gray-800">Build custom integrations with our first-class API.</p>
-                        </div>
-                      </a>
                     </div>
   
                     <div class="flex flex-col pt-4 md:pt-0 mx-1 md:mx-0">
@@ -136,5 +116,5 @@
         </div>
       </div>
     </nav>
-  </header>
+  </div>
   <!-- ========== END HEADER ========== -->
