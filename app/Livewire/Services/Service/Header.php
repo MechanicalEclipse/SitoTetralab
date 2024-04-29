@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire\ConsulenzaAmbientale;
+namespace App\Livewire\Services\Service;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class Header extends Component
 {
     public function render()
     {
-        return view('livewire.consulenza-ambientale.header');
+        return view('livewire.services.service.header');
     }
 }

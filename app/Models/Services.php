@@ -31,5 +31,9 @@ class Services extends Model
         return $this->hasMany(SubServices::class);
     }
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
 }

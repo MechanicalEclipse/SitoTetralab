@@ -20,4 +20,9 @@ class Type extends Model
     {
         return $this->hasMany(Services::class);
     }
+    
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

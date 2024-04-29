@@ -11,14 +11,14 @@ class ServiceType extends Component
     public $type;
     public $services;
 
-    public function mount($slug){
-        $this->type = Type::with('service')->firstorfail();
+    public function mount(Type $type){
+        $this->type = Type::with('service')->where("slug", $type->slug)->firstorfail();
         $this->services = $this->type->service;
     }
 
     public function render()
     {
-        return view('livewire.service-type',
+        return view('livewire.services.type.service-type',
     [
         'type' => $this->type,
         'services' => $this->services
