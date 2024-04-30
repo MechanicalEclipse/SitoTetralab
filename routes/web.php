@@ -17,4 +17,4 @@ Route::get('team', function () {
 // })->name("consulenza-ambientale");
 
 Route::get('/servizi/{type:slug}', ServiceType::class)->name("service-type-route");
-Route::get('/servizi/{type:slug}/{service}', Service::class)->name("service-route");
+Route::get('/servizi/{type:slug}/{services:slug}', Service::class)->name("service-route");

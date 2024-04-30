@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sub_services', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description', 65535);
+            $table->binary('description');
             $table->string('image');
             $table->foreignId('service_id')->constrained();
             $table->string('type');

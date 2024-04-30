@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('info');
-            $table->string('description', 65535);
+            $table->binary('description');
             $table->foreignId('type_id')->constrained();
             $table->string('image');
             $table->timestamps();
