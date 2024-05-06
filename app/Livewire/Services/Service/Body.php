@@ -9,12 +9,12 @@ use App\Models\SubServices;
 class Body extends Component
 {
     public $service;
-    public $subservice;
+    public $subservices;
 
 
     public function mount($service){
         $this->service = $service;
-        $this->subservice = SubServices::where('service_id', $service->id)->get();
+        $this->subservices = SubServices::where('service_id', $service->id)->get();
     }
 
     public function render()
