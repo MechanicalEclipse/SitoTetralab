@@ -1,7 +1,7 @@
 <div>
     <div class="grid grid-cols-{{(count($subservices) % 2) == 0 ? 2:3}} gap-4 sm:gap-6 md:gap-8 lg:gap-12 justify-items-center">
         @foreach ($subservices as $subservice)
-            {{-- <button type="button" class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition border border-transparent disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
+            <button type="button" class="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition border border-transparent disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
                 
                 <div class="relative bg-white border shadow-sm rounded-xl ">
                     <img class="w-96 h-auto group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="https://images.unsplash.com/photo-1680868543815-b8666dba60f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="Image Description">
@@ -34,9 +34,9 @@
                     </div>
                 </div>
                 </div>
-            </div> --}}
+            </div>
 
-            <!-- Popover -->
+            {{-- <!-- Popover -->
             <div class="hs-tooltip inline-block [--trigger:click]">
                 <div class="hs-tooltip-toggle block text-center">
                     <button type="button" class="flex flex-col group bg-white shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition border border-transparent disabled:opacity-50 disabled:pointer-events-none">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <!-- End Popover -->
+            <!-- End Popover --> --}}
         @endforeach
     </div>
 </div>
