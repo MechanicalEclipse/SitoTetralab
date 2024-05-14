@@ -3,7 +3,6 @@
     @livewire('hero')
 
     @livewire('testimonials')
-    <div class="m-2 mx-11 border-t border-neutral-300"></div>
     @livewire('features')
     <div class="m-2 mx-11 border-t border-neutral-300"></div>
     @livewire('features-approach')
