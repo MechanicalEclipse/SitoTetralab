@@ -102,13 +102,14 @@
   </div>
 
   <div class="flex justify-center mt-10">
-    <video class="object-cover w-full h-96 rounded-none lg:rounded-xl lg:w-4/5 border shadow-md" controls autoplay loop>
+    <video class="object-cover w-full h-96 rounded-none lg:rounded-xl lg:w-4/5  shadow-md" controls autoplay loop>
       <source src="https://pagedone.io/asset/uploads/1705298724.mp4" type="video/mp4"> 
-        Your browser does not support the video tag.
+        Il tuo browser non supporta i video.
     </video>
   </div>
 
 </div>
+
   {{-- <div class="flex h-2/5 xs:h-2/3">
     <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1665686376173-ada7a0031a85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=700&q=80" alt="Image Description">
   </div>

@@ -1,7 +1,7 @@
 {{-- Mettere i link in stampatello --}}
 <div>
   <header class="flex fixed flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm ">
-    <nav class="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-[36px] mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-neutral-800 dark:border-neutral-700 shadow-md" aria-label="Global">
+    <nav class="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-xl mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-neutral-800 dark:border-neutral-700 shadow-md" aria-label="Global">
       <div class="flex items-center justify-between">
         <a class="flex-none text-xl font-semibold" href="#" aria-label="Brand">Brand</a>
         <div class="md:hidden">

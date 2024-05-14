@@ -14,6 +14,7 @@ class Type extends Model
         'title',
         'description',
         'slug',
+        'image',
     ];
 
     public function service(): HasMany
