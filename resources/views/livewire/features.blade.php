@@ -144,7 +144,7 @@
           @if ($i == 0 || $i == 2)
             <div class="grid gap-2 mt-12 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3 h-2/4">
               <div class="max-w-lg min-w-full mx-auto ">
-                <div class="flex h-2/4">
+                <div class="flex h-96">
                   <div class="flex flex-col justify-center p-8 border bg-gray-50 rounded-3xl max-w-none">
                     <h2 class="font-medium text-gray-900">
                       {{$service->title}}
@@ -155,10 +155,10 @@
                   </div>
                 </div>
               </div>
-              <div class="lg:col-span-2 h-2/4">
+              <div class="lg:col-span-2 h-96">
                 <div>
-                  <div class="relative h-2/4 p-2 overflow-hidden border rounded-3xl">
-                    <img src="{{$service->image}}" class="object-cover h-2/4 border shadow-2xl rounded-2xl">
+                  <div class="relative h-96 p-2 overflow-hidden border rounded-3xl">
+                    <img src="{{$service->image}}" class="object-cover h-full w-full border shadow-2xl rounded-2xl">
                   </div>
                 </div>
               </div>
@@ -166,7 +166,7 @@
           @else
             <div class="grid gap-2 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3">
               <div class="max-w-lg min-w-full mx-auto lg:col-start-3">
-                <div class="flex h-full">
+                <div class="flex h-full bg-gradient-to-r from-jaffa to-curious-blue">
                   <div class="flex flex-col justify-center p-8 border bg-gray-50 rounded-3xl max-w-none">
                     <h2 class="font-medium text-gray-900">{{$service->title}}</h2>
                     <p class="mt-4 text-sm font-medium text-gray-500 text-pretty">
@@ -178,7 +178,7 @@
               <div class="lg:col-start-1 lg:col-span-2">
                 <div>
                   <div class="relative h-full p-2 overflow-hidden border rounded-3xl">
-                    <img src="{{$service->image}}" class="object-cover h-full border shadow-2xl rounded-2xl">
+                    <img src="{{$service->image}}" class="object-cover h-full border rounded-2xl">
                   </div>
                 </div>
               </div>
