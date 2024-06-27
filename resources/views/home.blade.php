@@ -4,12 +4,11 @@
 
     @livewire('testimonials')
     @livewire('features')
-    <div class="m-2 mx-11 border-t border-neutral-300"></div>
-    @livewire('features-approach')
-    <div class="m-2 mx-11 border-t border-neutral-300"></div>
+    @livewire('advantages')
     @livewire('features-stats')
-    <div class="m-2 mx-11 border-t border-neutral-300"></div>
+    @livewire('features-approach')
     @livewire('contact')
+    
     
 
     

@@ -9,7 +9,7 @@ use App\Livewire\Certificazioni;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('team', Team::class)->name("team");
 

@@ -127,70 +127,37 @@
 
   
   <section>
-    <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
-      <div>
-        <h1 class="text-4xl font-semibold tracking-tighter text-gray-900 lg:text-6xl text-balance">
-          Building one pagers together,
-          <span class="text-gray-600">wherever and anywhere</span>
+    <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+      <div class="text-center">
+        <h1 class="text-4xl font-normal tracking-tighter text-gray-900 lg:text-5xl text-balance">
+            Sicurezza sul lavoro, Consulenza, Rilievi e Monitoraggi Ambientali in un unico
+          <span class="text-gray-900 font-black">centro</span>
         </h1>
-        <p class="mt-4 text-base font-medium text-gray-500 text-balance">
-          Control and added security. With decentralization, users have more
-          control over their data and transactions, and the platform is less
-          susceptible to malicious attacks.
+  
+        <p class="w-3/4 lg:w-1/2 mx-auto mt-4 text-base font-medium text-gray-500 text-balance">
+          Lavoriamo, con dedizione e attenzione, per soddisfare al meglio le vostre esigenze, proprio come se ci fossimo noi al posto vostro
         </p>
-      </div>
-      <div class="space-y-2">
-        @foreach ($types as $i=>$service)
-          @if ($i == 0 || $i == 2)
-            <div class="grid gap-2 mt-12 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3 h-2/4">
-              <div class="max-w-lg min-w-full mx-auto ">
-                <div class="flex h-96">
-                  <div class="flex flex-col justify-center p-8 border bg-gray-50 rounded-3xl max-w-none">
-                    <h2 class="font-medium text-gray-900">
-                      {{$service->title}}
-                    </h2>
-                    <p class="mt-4 text-sm font-medium text-gray-500 text-pretty">
-                      {{$service->description}}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-span-2 h-96">
-                <div>
-                  <div class="relative h-96 p-2 overflow-hidden border rounded-3xl">
-                    <img src="{{$service->image}}" class="object-cover h-full w-full border shadow-2xl rounded-2xl">
-                  </div>
-                </div>
-              </div>
+
+        <div class="grid mt-12 gap-y-12 gap-10 md:grid-cols-2">
+          @foreach ($types as $service)
+          <div class="group">
+            <div class="overflow-hidden border rounded-3xl transition ease-in duration-200 group-hover:scale-[1.03]">
+              <img src="{{$service->image}}" alt="#_" class="object-cover w-full h-80 mx-auto rounded-2xl ">
             </div>
-          @else
-            <div class="grid gap-2 lg:grid-flow-col-dense lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-3">
-              <div class="max-w-lg min-w-full mx-auto lg:col-start-3">
-                <div class="flex h-full bg-gradient-to-r from-jaffa to-curious-blue">
-                  <div class="flex flex-col justify-center p-8 border bg-gray-50 rounded-3xl max-w-none">
-                    <h2 class="font-medium text-gray-900">{{$service->title}}</h2>
-                    <p class="mt-4 text-sm font-medium text-gray-500 text-pretty">
-                      {{$service->description}}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="lg:col-start-1 lg:col-span-2">
-                <div>
-                  <div class="relative h-full p-2 overflow-hidden border rounded-3xl">
-                    <img src="{{$service->image}}" class="object-cover h-full border rounded-2xl">
-                  </div>
-                </div>
-              </div>
+            <div class="mt-4 transition ease-in duration-200 group-hover:scale-[1.03]">
+              <p class="relative font-medium mx-auto px-2 w-fit text-gray-900 before:absolute before:bottom-0 before:start-0 before:-z-[1] before:w-full before:h-6 before:bg-curious-blue group-hover:text-white before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100">{{$service->title}}</p>
+              <p class="mt-2 text-sm text-gray-500 ">
+                {{$service->description}}
+              </p>
             </div>
-          @endif
-
-        @endforeach
-
-
+          </div>
+          @endforeach
+        </div>
+  
       </div>
     </div>
   </section>
 
+  
 </div>
     

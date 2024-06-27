@@ -15,7 +15,7 @@ class Features extends Component
 
     public function render()
     {
-        return view('livewire.features',
+        return view('livewire.home.features',
         [
             'types' => $this->type,
         ]);

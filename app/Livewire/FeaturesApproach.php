@@ -8,6 +8,6 @@ class FeaturesApproach extends Component
 {
     public function render()
     {
-        return view('livewire.features-approach');
+        return view('livewire.home.features-approach');
     }
 }

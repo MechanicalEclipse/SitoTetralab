@@ -8,6 +8,6 @@ class FeaturesStats extends Component
 {
     public function render()
     {
-        return view('livewire.features-stats');
+        return view('livewire.home.features-stats');
     }
 }

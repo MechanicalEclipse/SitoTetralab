@@ -1,9 +1,9 @@
 {{-- Mettere i link in stampatello --}}
 <div>
   <header class="flex fixed flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm ">
-    <nav class="mt-6 relative max-w-[85rem] w-full bg-white border border-gray-200 rounded-xl mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto  shadow-md" aria-label="Global">
+    <nav class="mt-6 relative max-w-[85rem] lg:max-w-[85rem] w-full bg-white border border-gray-200 rounded-xl mx-2 py-3 px-4 md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto  shadow-md" aria-label="Global">
       <div class="flex items-center justify-between">
-        <a class="flex-none text-xl font-semibold" href="#" aria-label="Brand"> <img src="{{asset("storage/logo.png")}}" alt="Tetralab S.R.L." class="h-20"> </a>
+        <a class="flex-none text-xl font-semibold" href="{{route('home')}}" aria-label="Brand"> <img src="{{asset("storage/logo-txt-only.svg")}}" alt="Tetralab S.R.L." class="h-10"> </a>
         <div class="md:hidden">
           <button type="button" class="hs-collapse-toggle size-8 flex justify-center items-center text-sm font-semibold rounded-full border border-gray-200 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
             <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
@@ -13,7 +13,7 @@
       </div>
       <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
         <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:ps-7">
-          <a class="font-medium text-blue-600 md:py-6" href="#" aria-current="page">Home</a>
+          <a class="font-medium text-blue-600 md:py-6" href="{{route('home')}}" aria-current="page">Home</a>
           <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
             <button type="button" class="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium ">
               Chi siamo
@@ -21,7 +21,7 @@
             </button>
 
             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2 md: before:absolute top-full md:border before:-top-5 before:start-0 before:w-full before:h-5">
-              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" href="#">
+              <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" href="{{route('team')}}">
                 Team
               </a>
               <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" href="#">
@@ -40,7 +40,7 @@
 
             <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2 md: before:absolute top-full md:border before:-top-5 before:start-0 before:w-full before:h-5">
               @foreach ($type as $service)
-                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" href="#">
+                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500" href="{{route("service-type-route", $service->slug)}}" wire:key="{{$service->id}}">
                   {{$service->title}}
                 </a>
               @endforeach
