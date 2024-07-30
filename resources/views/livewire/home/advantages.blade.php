@@ -10,7 +10,7 @@
                 come unico referente
               </h1>
               <p class="mt-4 text-base font-medium text-gray-500 text-balance">
-                Ci proponiamo di essere un punto di riferimento e di fiducia per le aziende offrendo, con cura e dedizione, una consulenza completa che possa aiutarle a gestire in modo puntuale ed efficace i molteplici ed intricati adempimenti in materia ambientale e di sicurezza sul lavoro.
+                Ci proponiamo di essere un punto di riferimento e di fiducia per le aziende offrendo, una consulenza completa che possa aiutarle a gestire in modo puntuale ed efficace i molteplici ed intricati adempimenti in materia ambientale e di sicurezza sul lavoro.
               </p>
               <div class="flex flex-col gap-12 mt-12">
                 <div class="flex flex-col gap-4 lg:flex-row">

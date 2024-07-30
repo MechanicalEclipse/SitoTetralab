@@ -10,7 +10,7 @@
       </h1>
 
       <p class="w-3/4 lg:w-1/2 mx-auto mt-4 text-base font-medium text-gray-500 text-balance">
-        Lavoriamo, con dedizione e attenzione, per soddisfare al meglio le vostre esigenze, proprio come se ci fossimo noi al posto vostro
+        Lavoriamo per soddisfare al meglio le vostre esigenze proprio come se ci fossimo noi al posto vostro
       </p>
     </div>
     <!-- Tab Nav -->
@@ -18,7 +18,7 @@
       <button type="button" class="hs-tab-active:bg-gray-100 hs-tab-active:hover:border-transparent w-full flex flex-col text-start transition ease-in-out duration-100 hover:bg-gray-100 p-3 md:p-5 rounded-xl active" id="tabs-with-card-item-1" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
         <svg class="flex-shrink-0 hidden sm:block size-7 hs-tab-active:text-curious-blue text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
         <span class="mt-5">
-          <span class="hs-tab-active:text-curious-blue block font-semibold text-gray-900">All-in-one workspace</span>
+          <span class="hs-tab-active:text-curious-blue block font-semibold text-gray-900">Primo contatto</span>
           <span class="hidden lg:block mt-2 text-gray-800">Create a business, whether you’ve got a fresh idea.</span>
         </span>
       </button>

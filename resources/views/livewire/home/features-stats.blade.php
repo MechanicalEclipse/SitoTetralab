@@ -5,7 +5,7 @@
       <!-- Stats -->
       <div class="px-10 text-center">
         <h4 class="text-lg sm:text-xl font-semibold text-gray-800">Clienti soddisfatti</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">99.95%</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-jaffa">99.95%</p>
         <p class="mt-1 text-gray-500">in fulfilling orders</p>
       </div>
       <!-- End Stats -->
@@ -13,7 +13,7 @@
       <!-- Stats -->
       <div class="px-10 text-center">
         <h4 class="text-lg sm:text-xl font-semibold text-gray-800">AUA</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">2,000+</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-jaffa">2,000+</p>
         <p class="mt-1 text-gray-500">partner with Preline</p>
       </div>
       <!-- End Stats -->
@@ -21,7 +21,7 @@
       <!-- Stats -->
       <div class="px-10 text-center">
         <h4 class="text-lg sm:text-xl font-semibold text-gray-800">QUALCOSA</h4>
-        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-600">85%</p>
+        <p class="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-jaffa">85%</p>
         <p class="mt-1 text-gray-500">this year alone</p>
       </div>
       <!-- End Stats -->

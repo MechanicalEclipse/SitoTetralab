@@ -1,5 +1,5 @@
 <div>
-    <div class="mx-auto pt-10 max- mb-8 w-10/12 lg:mb-14 text-center">
+    <div class="mx-auto pt-44 max-w-5xl mb-8 lg:mb-14 text-center">
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold">
             {{$service->title}}
         </h2>
