@@ -1,11 +1,14 @@
 <div>
-    <button type="button" class="group w-96" data-hs-overlay="#hs-vertically-centered-modal">
+    @php
+        $newsubservice = $subservice;
+    @endphp
+    <button type="button" class="group w-full" data-hs-overlay="#hs-vertically-centered-modal">
         
         <div class="overflow-hidden border rounded-3xl transition ease-in duration-200 group-hover:scale-[1.03]">
-            <img src="{{$subservice->image}}" alt="#_" class="object-cover w-full h-80 mx-auto rounded-2xl ">
+            <img src="{{asset($newsubservice->image)}}" alt="#_" class="object-cover w-full h-80 mx-auto rounded-2xl ">
         </div>
         <div class="mt-4 transition ease-in duration-200 group-hover:scale-[1.03]">
-            <p class="relative font-medium mx-auto px-2 w-fit text-gray-900 before:absolute before:bottom-0 before:start-0 before:-z-[1] before:w-full before:h-6 before:bg-curious-blue group-hover:text-white before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100">{{$subservice->title}}</p>
+            <p class="relative font-medium mx-auto px-2 w-fit text-gray-900 before:absolute before:bottom-0 before:start-0 before:-z-[1] before:w-full before:h-6 before:bg-curious-blue group-hover:text-white before:transition before:origin-left before:scale-x-0 group-hover:before:scale-x-100">{{$newsubservice->title}}</p>
         </div>
 
     </button>
@@ -15,7 +18,8 @@
             <div class="w-full flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto ">
                 <div class="flex justify-between items-center py-3 px-4 border-b ">
                     <h3 class="font-bold text-gray-800 ">
-                        {{$subservice->title}}
+                        {{$newsubservice}}
+                        {{$newsubservice->title}}
                     </h3>
                     <button type="button" class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-vertically-centered-modal">
                         <i class="fa-solid fa-xmark"></i>
@@ -23,12 +27,13 @@
                 </div>
                 <div class="py-4 px-10 overflow-y-auto">
                     <p class="text-gray-800 ">
-                        {{$subservice->description}}
+                        {{$newsubservice->description}}
                     </p>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
 

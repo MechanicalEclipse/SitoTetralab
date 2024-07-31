@@ -140,7 +140,7 @@
 
         <div class="grid mt-12 gap-y-12 gap-10 md:grid-cols-2">
           @foreach ($types as $service)
-          <div class="group">
+          <a href="{{route("service-type-route", $service->slug)}}" wire:key="{{$service->id}}" class="group">
             <div class="overflow-hidden border rounded-3xl transition ease-in duration-200 group-hover:scale-[1.03]">
               <img src="{{asset($service->image)}}" alt="#_" class="object-cover w-full h-80 mx-auto rounded-2xl ">
             </div>
@@ -150,7 +150,7 @@
                 {{$service->description}}
               </p>
             </div>
-          </div>
+          </a>
           @endforeach
         </div>
   

@@ -6,11 +6,22 @@
         
         @livewire('services.service.header' , ['service' => $service])
         <div class="max-w-screen-2xl px-4 xl:px-0  lg:pt-20 lg:pb-20 mx-auto">
-            <div class="pb-12 grid lg:grid-cols-{{(count($subservices) % 2) == 0 ? (request()->segment(count(request()->segments())) == "rilievi-campionamenti-e-valutazioni-dei-rischi-specifici") ? 3:2:3}} md:grid-cols-3 grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
-                @foreach ($subservices as $subservice)
-                    @livewire('services.service.body', ['subservice' => $subservice])
-                @endforeach
-            </div>
+            
+            @if (count($subservices) === 0)
+                <div class="pb-12 grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                    <div class="group">
+                        <div class="overflow-hidden border rounded-3xl transition ease-in duration-200 group-hover:scale-[1.01]">
+                            <img src="{{asset($service->image)}}" alt="#_" class="object-cover w-full h-96 mx-auto rounded-2xl ">
+                        </div>
+                    </div>
+                </div>
+            @else
+                <div class="pb-12 grid lg:grid-cols-{{(count($subservices) % 2) == 0 ? (request()->segment(count(request()->segments())) == "rilievi-campionamenti-e-valutazioni-dei-rischi-specifici") ? 3:2:3}} md:grid-cols-3 grid-cols-1 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                    @foreach ($subservices as $subservice)
+                        @livewire('services.service.body', ['subservice' => $subservice])
+                    @endforeach
+                </div>
+            @endif
         </div>
 
         <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
