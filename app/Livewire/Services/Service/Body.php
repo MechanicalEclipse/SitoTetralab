@@ -9,8 +9,10 @@ use App\Models\SubServices;
 class Body extends Component
 {
     public $subservice;
-    public function mount($subservice){
+    public $index;
+    public function mount($subservice, $index){
         $this->subservice = $subservice;
+        $this->index = $index;
     }
 
 
@@ -19,6 +21,7 @@ class Body extends Component
         return view('livewire.services.service.body',
         [
             'subservice' => $this->subservice,
+            'index' => $this->index
         ]);
     }
 }

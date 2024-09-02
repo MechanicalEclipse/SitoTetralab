@@ -2,7 +2,7 @@
   
     @livewire('hero')
 
-    @livewire('testimonials')
+    {{-- @livewire('testimonials') --}}
     @livewire('features')
     @livewire('advantages')
     @livewire('features-stats')

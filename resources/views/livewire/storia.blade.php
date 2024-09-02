@@ -20,7 +20,12 @@
                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <!-- Icon -->
                     <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-jaffa group-[.is-active]:even:bg-jaffa  text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition ease-in duration-200 group-hover:scale-[1.03] group-hover:bg-curious-blue">
-                        <i class="fa-solid fa-check"></i>
+                        @if (!$loop->last)
+                            <i class="fa-solid fa-flag"></i>
+                        @else
+                            <i class="fa-solid fa-arrow-down"></i>
+                        @endif
+                        
                     </div>
                     <!-- Card -->
                     <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-3xl border transition ease-in duration-200 group-hover:scale-[1.03] border-slate-200 shadow">
